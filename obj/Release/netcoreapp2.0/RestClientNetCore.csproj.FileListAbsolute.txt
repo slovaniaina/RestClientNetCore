@@ -1,0 +1,10 @@
+C:\inetpub\wwwroot\RestClientNetCore\bin\Release\netcoreapp2.0\RestClientNetCore.deps.json
+C:\inetpub\wwwroot\RestClientNetCore\bin\Release\netcoreapp2.0\RestClientNetCore.runtimeconfig.json
+C:\inetpub\wwwroot\RestClientNetCore\bin\Release\netcoreapp2.0\RestClientNetCore.runtimeconfig.dev.json
+C:\inetpub\wwwroot\RestClientNetCore\bin\Release\netcoreapp2.0\RestClientNetCore.dll
+C:\inetpub\wwwroot\RestClientNetCore\bin\Release\netcoreapp2.0\RestClientNetCore.pdb
+C:\inetpub\wwwroot\RestClientNetCore\obj\Release\netcoreapp2.0\RestClientNetCore.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\RestClientNetCore\obj\Release\netcoreapp2.0\RestClientNetCore.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\RestClientNetCore\obj\Release\netcoreapp2.0\RestClientNetCore.AssemblyInfo.cs
+C:\inetpub\wwwroot\RestClientNetCore\obj\Release\netcoreapp2.0\RestClientNetCore.dll
+C:\inetpub\wwwroot\RestClientNetCore\obj\Release\netcoreapp2.0\RestClientNetCore.pdb

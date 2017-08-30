@@ -1,0 +1,11 @@
+C:\inetpub\wwwroot\dotnet-core-rest-client\bin\Debug\netcoreapp2.0\dotnet-core-rest-client.deps.json
+C:\inetpub\wwwroot\dotnet-core-rest-client\bin\Debug\netcoreapp2.0\dotnet-core-rest-client.runtimeconfig.json
+C:\inetpub\wwwroot\dotnet-core-rest-client\bin\Debug\netcoreapp2.0\dotnet-core-rest-client.runtimeconfig.dev.json
+C:\inetpub\wwwroot\dotnet-core-rest-client\bin\Debug\netcoreapp2.0\dotnet-core-rest-client.dll
+C:\inetpub\wwwroot\dotnet-core-rest-client\bin\Debug\netcoreapp2.0\dotnet-core-rest-client.pdb
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.AssemblyInfo.cs
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.dll
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.pdb
+C:\inetpub\wwwroot\dotnet-core-rest-client\obj\Debug\netcoreapp2.0\dotnet-core-rest-client.csprojResolveAssemblyReference.cache
