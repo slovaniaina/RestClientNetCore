@@ -11,6 +11,11 @@ using RestClientNetCore.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
+using System.Drawing;
+using System.IO;
+using System.Net.Mime;
+using System.Security.Cryptography;
+
 namespace RestClientNetCore
 {
     public class Program
@@ -90,6 +95,57 @@ namespace RestClientNetCore
 
             return grsResponse;
         }
+
+        //Encrypting a string
+        public static string StringEncrypt(string inText, string key)
+        {
+            var bytesBuff = Encoding.Unicode.GetBytes(inText);
+            using (var aes = Aes.Create())
+            {
+                var crypto = new Rfc2898DeriveBytes(key, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+                aes.Key = crypto.GetBytes(32);
+                aes.IV = crypto.GetBytes(16);
+                using (var mStream = new MemoryStream())
+                {
+                    using (var cStream = new CryptoStream(mStream, aes.CreateEncryptor(), CryptoStreamMode.Write))
+                    {
+                        cStream.Write(bytesBuff, 0, bytesBuff.Length);
+                        cStream.Close();
+                    }
+                    inText = Convert.ToBase64String(mStream.ToArray());
+                }
+            }
+            return inText;
+        }
+
+        //Decrypting a string
+        public static string StringDecrypt(string cryptTxt, string key)
+        {
+            cryptTxt = cryptTxt.Replace(" ", "+");
+            var bytesBuff = Convert.FromBase64String(cryptTxt);
+            using (var aes = Aes.Create())
+            {
+                var crypto = new Rfc2898DeriveBytes(key, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+                aes.Key = crypto.GetBytes(32);
+                aes.IV = crypto.GetBytes(16);
+                using (var mStream = new MemoryStream())
+                {
+                    using (var cStream = new CryptoStream(mStream, aes.CreateDecryptor(), CryptoStreamMode.Write))
+                    {
+                        cStream.Write(bytesBuff, 0, bytesBuff.Length);
+                        cStream.Close();
+                    }
+                    cryptTxt = Encoding.Unicode.GetString(mStream.ToArray());
+                }
+            }
+            return cryptTxt;
+        }
+
+        //public System.Drawing.Image Base64ToImage(string base64String)
+        //{
+        //    var image = System.IO.File.OpenRead("C:\\test\random_image.jpeg");
+        //    return File(image, "image/jpeg");
+        //}
 
 
     }

@@ -1,2 +1,7 @@
 bin/
 bin/*
+\.vs/RestClientNetCore/v15/
+
+obj/Debug/netcoreapp2\.0/RestClientNetCore\.csproj\.CoreCompileInputs\.cache
+
+obj/Debug/netcoreapp2\.0/
